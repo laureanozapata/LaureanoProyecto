@@ -1,0 +1,1289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+$color_1: #fff;
+$color_2: #eeff00;
+$color_3: #efefef;
+$color_4: #fd000085;
+$color_5: #bbb;
+$color_6: #ff0505;
+$color_7: #000;
+$color_8: aqua;
+$color_9: #ececec;
+$color_10: red;
+$color_11: white;
+$color_12: #21201e;
+$bg-color1: #000;
+$bg-color2: #131c257e;
+$bg-color3: #fffb0681;
+$bg-color4: #2c3e50;
+$bg-color5: #fff;
+$bg-color6: #bbb;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*header*/
+header {
+	background: $bg-color1;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 80px;
+	.navbar {
+		a {
+			font-size: 18px;
+			padding: 1rem;
+			color: $color_1;
+			text-decoration: none;
+			display: inline-block;
+			&:hover {
+				color: $color_2;
+			}
+		}
+	}
+	.icons {
+		a {
+			color: $color_1;
+			text-decoration: none;
+			font-size: 15px;
+			margin-right: 10px;
+			&:hover {
+				color: $color_2;
+			}
+		}
+	}
+	.fa-bars {
+		font-size: 30px;
+		color: $color_1;
+		border-radius: .5rem;
+		padding: .5rem 1rem;
+		cursor: pointer;
+		border: solid rgba(255, 255, 255, 0.3);
+		display: none;
+	}
+}
+#toggler {
+	display: none;
+}
+.checkbtn {
+	font-size: 30px;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+.logo {
+	width: 60px;
+	height: 60px;
+}
+
+/*footer*/
+.pie-pagina {
+	width: 100%;
+	background-color: $bg-color1;
+	position: absolute;
+	.grupo-1 {
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding: 20px 0 0 25px;
+		.box1 {
+			height: 100%;
+			display: block;
+			h2 {
+				color: $color_1;
+				margin-bottom: 20px;
+				font-size: 18px;
+			}
+			p {
+				color: $color_3;
+			}
+		}
+		.box {
+			.figure {
+				iframe {
+					width: 40%;
+				}
+			}
+		}
+	}
+	.grupo-2 {
+		padding: 15px 10px;
+		text-align: center;
+		color: $color_1;
+		.red-social {
+			a {
+				display: inline-block;
+				text-decoration: none;
+				width: 45px;
+				height: 45px;
+				line-height: 45px;
+				color: $color_1;
+				margin-right: 10px;
+				background-color: $bg-color2;
+				text-align: center;
+				margin: 0 10px 15px 0;
+				transition: all 300ms ease;
+				&:hover {
+					color: $color_4;
+				}
+			}
+		}
+	}
+}
+.lista-ayuda {
+	li {
+		a {
+			font-size: 18px;
+			text-decoration: none;
+			color: $color_5;
+			display: block;
+			margin: 0 25px 0 0;
+			transition: all.3s ease;
+			justify-content: center;
+		}
+	}
+}
+.caja-box {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+}
+
+/*footer nosotros*/
+.pie-pagina2 {
+	width: 100%;
+	background-color: $bg-color1;
+	position: absolute;
+	.grupo-1 {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		text-align: center;
+		padding: 20px 0 0 25px;
+		.box1 {
+			height: 100%;
+			display: block;
+			margin-top: 25px;
+			h2 {
+				color: $color_1;
+				margin-bottom: 25px;
+				font-size: 18px;
+			}
+			p {
+				color: $color_2;
+				margin: 10px;
+			}
+		}
+		.box {
+			.figure {
+				iframe {
+					width: 40%;
+				}
+			}
+		}
+		small {
+			font-size: 30px;
+			margin: 0 0 20px 0;
+		}
+	}
+	.grupo-2 {
+		padding: 15px 10px;
+		text-align: center;
+		color: $color_1;
+		.red-social {
+			a {
+				display: inline-block;
+				text-decoration: none;
+				width: 45px;
+				height: 45px;
+				line-height: 45px;
+				color: $color_1;
+				margin-right: 10px;
+				background-color: $bg-color2;
+				text-align: center;
+				margin: 0 10px 15px 0;
+				transition: all 300ms ease;
+				&:hover {
+					color: $color_4;
+				}
+			}
+		}
+	}
+}
+
+/*página inicio*/
+.contenedor {
+	display: grid;
+	grid-template-columns: repeat(4, 2fr);
+	justify-content: space-around;
+	margin: 0 auto;
+}
+.titulo {
+	h1 {
+		font-size: 40px;
+		text-transform: uppercase;
+		color: $color_6;
+		margin: 30px 0 40px 0;
+		text-align: center;
+		font-weight: bolder;
+	}
+}
+.productos-inicio {
+	width: 90%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	a {
+		&:link {
+			color: $color_9;
+			text-decoration: none;
+			background-color: $bg-color4;
+			padding: 10px 25px;
+			border-radius: 1rem;
+			transition: all 0.2s;
+		}
+		&:visited {
+			color: $color_9;
+			text-decoration: none;
+			background-color: $bg-color4;
+			padding: 10px 25px;
+			border-radius: 1rem;
+			transition: all 0.2s;
+		}
+	}
+}
+.producto {
+	position: relative;
+	background-color: $bg-color3;
+	width: 250px;
+	height: 105%;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 3);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px 20px 40px;
+	margin: 20px;
+	border-radius: 10px;
+	transition: .3s;
+}
+.imgenes-inicio1 {
+	width: 40%;
+	height: 60%;
+	margin: 0 auto;
+}
+.imgenes-inicio2 {
+	width: 40%;
+	height: 60%;
+	margin: 0 auto;
+}
+.imgenes-inicio3 {
+	width: 40%;
+	height: 80%;
+	margin: 0 auto;
+}
+.imgenes-inicio4 {
+	width: 40%;
+	height: 60%;
+	margin: 0 auto;
+}
+.imgenes-inicio5 {
+	width: 40%;
+	height: 60%;
+	margin: 0 auto;
+}
+.imgenes-inicio6 {
+	width: 40%;
+	height: 80%;
+	margin: 0 auto;
+}
+.namePrince {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	h3 {
+		font-size: 20px;
+		color: $color_7;
+		margin: 10px 0 20px 0;
+	}
+	p {
+		font-size: 18px;
+		text-transform: capitalize;
+		color: $color_8;
+	}
+}
+.btn-info {
+	margin: 0 0 0 35px;
+}
+
+
+/*página metodos*/
+.container2 {
+	width: 600px;
+	border-radius: 8px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.title {
+	h4 {
+		font-size: 30px;
+		margin: 30px 30px 30px 40px;
+		font-weight: bolder;
+	}
+}
+.categoria {
+	label {
+		padding: 15px;
+		box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		cursor: pointer;
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+.imgContainer {
+	width: 50px;
+	height: auto;
+}
+
+/*página contacto*/
+.container-form {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	h2 {
+		font-size: 35px;
+		margin-bottom: 15px;
+	}
+	p {
+		font-size: 17px;
+		margin-bottom: 30px;
+		line-height: 1.6;
+	}
+	a {
+		font-size: 20px;
+		margin: 30px 0 0 0;
+		width: 100%;
+		display: inline-block;
+		text-decoration: none;
+		color: $color_7;
+		font-weight: 500;
+		i {
+			color: $color_10;
+			margin-right: 20px;
+		}
+	}
+	form {
+		.campo {
+			font-size: 15px;
+			padding: 15px 10px;
+			width: 350px;
+			border: 1px solid #dbdbdb;
+			margin-bottom: 20px;
+			border-radius: 3px;
+			outline: 0px;
+		}
+		textarea {
+			max-width: 350px;
+			min-height: 140px;
+			max-height: 150px;
+		}
+	}
+	.btn-enviar {
+		padding: 15px;
+		font-size: 16px;
+		border: none;
+		outline: 0px;
+		background: red;
+		color: $color_11;
+		font-weight: 700;
+		border-radius: 3px;
+		transition: all 300ms ease;
+		&:hover {
+			background-color: $bg-color1;
+		}
+	}
+}
+textarea {
+	font-size: 15px;
+	padding: 15px 10px;
+	width: 350px;
+	border: 1px solid #dbdbdb;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	outline: 0px;
+}
+.form-txt {
+	display: flex;
+	justify-content: space-between;
+	a {
+		color: $color_7;
+		text-decoration: none;
+		font-size: 15px;
+		margin: 0 0 15px 0;
+	}
+}
+.carousel-indicators {
+	button {
+		color: $color_7;
+	}
+}
+
+/*página nosotros*/
+.titulo-nosotros {
+	h1 {
+		font-size: 30px;
+		text-align: center;
+		margin: 30px 0 50px 0;
+		font-weight: bolder;
+	}
+}
+.cajas {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.caja-nosotros1 {
+	background-color: $bg-color5;
+	width: 500px;
+	margin-left: 40px;
+	p {
+		font-size: 18px;
+	}
+}
+.caja-nosotros2 {
+	background-color: $bg-color5;
+	img {
+		width: 80%;
+		height: 70%;
+		border-radius: 10px;
+	}
+}
+
+/*página productos*/
+.titulo-productos {
+	h1 {
+		font-size: 30px;
+		text-align: center;
+		margin: 30px 0 30px 0;
+		font-weight: bolder;
+	}
+}
+.productos {
+	display: grid;
+	grid-template-columns: repeat(3, 3fr);
+}
+.all-products {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.descrip-prod {
+	overflow: hidden;
+	background-color: $bg-color6;
+	color: $color_12;
+	text-align: center;
+	width: 280px;
+	height: 280px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin: 2rem;
+	&:hover {
+		img {
+			scale: 1.1;
+		}
+	}
+	img {
+		height: 260px;
+		transition: all 0.3s;
+		border-radius: 50%;
+	}
+}
+
+
+
+@media screen and (max-width: 768px) {
+    /*header*/
+    header .fa-bars {
+        display: block;
+        color: #fff;
+    }
+    header .fa-bars a:hover {
+        color: #eeff00;
+    }
+    .logo {
+        display: none;
+    }
+    header {
+        width: 100%;
+    }
+    header .navbar {
+        background: #333;
+        border: solid #333;
+        width: 100%;
+        z-index: 1000;
+    }
+    header .navbar a {
+        width: 690px;
+        font-size: 25px;
+        background: #000;
+        color: #fff;
+        text-align: center;
+    }
+    header .navbar a:hover {
+        color: #eeff00;
+    }
+    header .icons a {
+        color: #fff;
+        display: flex;
+        text-decoration: none;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    header .icons a:hover {
+        color: #eeff00;
+    }
+    header #toggler:checked~.navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header #toggler {
+        display: none;
+    }
+
+    /*footer pàginas*/
+    .pie-pagina {
+        width: 100%;
+        display: block;
+    }
+    .caja-box {
+        width: 100%;
+        display: block;
+    }
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        display: block;
+    }
+    .pie-pagina .grupo-1 .box1 {
+        display: inline-block;
+    }
+    .pie-pagina .grupo-2 {
+        text-align: center;
+    }
+
+    /*pàgina inicio*/
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+        justify-content: space-around;
+        margin: 20px;
+    }
+    .productos-inicio {
+        margin: 0 auto;
+    }
+    .producto {
+        height: 90%;
+    }
+    .producto h3 {
+        font-size: 30px;
+        margin: 0 auto;
+        padding: 0 0 40px 0;
+    }
+    .producto img {
+        margin-bottom: 10px;
+    }
+    .productos-inicio a:link,
+    .productos-inicio a:visited {
+        color: #ececec;
+        text-decoration: none;
+        background-color: #2c3e50;
+        padding: 1.2rem 3rem;
+        border-radius: 1rem;
+        transition: all 0.2s;
+    }
+    .btn-info {
+        margin: 0 0 0 35px;
+    }
+
+    /*pàgina productos*/
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 6fr);
+        justify-content: space-around;
+        margin: 20px;
+    }
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(2, 6fr);
+    }
+    .descrip-prod {
+        text-align: center;
+        width: 320px;
+        height: 450px;
+    }
+    .subtit-producto {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .descrip-prod img {
+        height: 260px;
+        margin: 1rem;
+        transition: all 0.3s;
+    }
+    .producto {
+        height: 110%;
+    }
+
+    /*pàgina nosotros*/
+    .cajas {
+        display: block;
+    }
+    .caja-nosotros1 {
+        width: 520px;
+        height: 300px;
+        margin: 0 0 0 30px;
+    }
+    .caja-nosotros2 img {
+        width: 55%;
+        height: 50%;
+        border-radius: 10px;
+        margin: 0 0 0 90px;
+    }
+
+    /*pàgina contacto*/
+    .form-contacto {
+        text-align: center;
+        width: 60%;
+        height: 60%;
+        margin-top: 15%;
+    }
+    /*página contacto*/
+    .container-form h2 {
+        font-size: 35px;
+        margin: 0 0 0 25px;
+    }
+    .container-form {
+        width: 100%;
+        margin: 30px 0 30px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .info-form {
+        margin: 0 0 20px 50px;
+    }
+    .container-form a {
+        font-size: 23px;
+        margin: 30px 0 0 0;
+        font-weight: 400;
+    }
+    .container-form a i {
+        font-size: 25px;
+    }
+    .container-form form .campo, textarea {
+        font-size: 20px;
+        width: 300px;
+        margin: 0 0 15px 55px;
+    }
+    .container-form form textarea {
+        font-size: 20px;
+        margin: 0 0 0 55px;
+    }
+    .form-txt a {
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+        margin: 10px 10px 20px 0;
+    }
+    .container-form .btn-enviar {
+        margin: 0 0 0 40px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 554px) {
+    .titulo h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    /*header*/
+    header .fa-bars {
+        display: block;
+    }
+    header .fa-bars a:hover {
+        color: #eeff00;
+    }
+    .logo {
+        display: none;
+    }
+    header .navbar {
+        position: absolute;
+        background: #333;
+        height: 360px;
+        width: 100%;
+        z-index: 1000;
+        margin-top: 438px;
+    }
+    header .navbar a {
+        width: 470px;
+        font-size: 20px;
+        background: #000;
+        color: #fff;
+        display: block;
+        text-align: center;
+        margin: 0 0 5px 0;
+    }
+    header .navbar a:hover {
+        color: #eeff00;
+    }
+    header .icons a {
+        display: inline-block;
+        font-size: 19px;
+    }
+    header .icons a:hover {
+        color: #eeff00;
+    }
+
+    /*footer*/
+    .pie-pagina {
+        width: 100%;
+        display: inline-block;
+    }
+    .caja-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .pie-pagina .grupo-1 .box1 {
+        display: inline-block;
+    }
+    .pie-pagina .grupo-2 {
+        text-align: center;
+    }
+    .pie-pagina .grupo-1 .box .figure iframe {
+        width: 40%;
+        height: 50%;
+    }
+    .lista-ayuda li a {
+        font-size: 18px;
+        margin: 0 25px 0 0;
+    }
+    
+    /*pàgina inicio*/
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 6fr);
+    }
+    .producto {
+        width: 100%;
+        height: 118%;
+        margin: 0 auto;
+    }
+    .producto h3 {
+        font-size: 25px;
+        margin: 0 auto;
+        padding: 0 0 30px 0;
+    }
+    .producto img {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 170px;
+    }
+
+    /*pàgina productos*/
+    .descrip-prod {
+        width: 215px;
+        height: 210px;
+        margin: 0 0 20px 0;
+    }
+    .descrip-prod img {
+        width: 200px;
+        height: 220px;
+    }
+    .descrip-prod img {
+        transition: all 0.3s;
+    }
+
+    /*pàgina mètodos*/
+    .title h4 {
+        font-size: 30px;
+    }
+    .container2 {
+        width: 375px;
+    }
+    .name {
+        font-size: 20px;
+    }
+
+    /*pàgina nosotros*/
+    .cajas {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        margin-bottom: 30px;
+    }
+    .caja-nosotros1 {
+        background-color: #fff;
+        margin: 0 auto
+    }
+    .caja-nosotros2 img {
+        width: 90%;
+        height: 80%;
+        border-radius: 10px;
+        margin: 20px 0 0 25px;
+    }
+
+    /*página contacto*/
+    .container-form h2 {
+        font-size: 35px;
+        margin: 0 0 0 100px;
+    }
+    .container-form {
+        width: 100%;
+        margin: 30px 0 30px 0;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 25px;
+    }
+    .info-form {
+        margin: 0 0 20px 50px;
+    }
+    .container-form a {
+        font-size: 23px;
+        margin: 30px 0 0 0;
+        font-weight: 400;
+    }
+    .container-form a i {
+        font-size: 25px;
+    }
+    .container-form form .campo, textarea {
+        font-size: 20px;
+        width: 400px;
+        margin: 0 0 15px 55px;
+    }
+    .container-form form textarea {
+        font-size: 20px;
+        width: 400px;
+        margin: 0 0 0 55px;
+    }
+    .form-txt a {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        margin: 10px 10px 20px 0;
+    }
+    .container-form .btn-enviar {
+        margin: 0 0 0 40px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    /*header*/
+    .titulo h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    header .fa-bars {
+        display: block;
+    }
+    header .fa-bars a:hover {
+        color: #eeff00;
+    }
+    .logo {
+        display: none;
+    }
+    header .navbar {
+        background: #333;
+        border: solid #333;
+        height: 340px;
+        margin-top: 390px;
+        width: 100%;
+        z-index: 1000;
+    }
+    header .navbar a:hover {
+        color: #eeff00;
+    }
+    header .navbar a {
+        font-size: 18px;
+        background: #000;
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        width: 325px;
+        margin: 0 0 5px 0;
+    }
+    header .icons a:hover {
+        color: #eeff00;
+    }
+
+    /*footer pàginas*/
+    .pie-pagina {
+        width: 100%;
+        display: block;
+    }
+    .caja-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+    }
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        display: block;
+    }
+    .pie-pagina .grupo-1 .box1 {
+        display: block;
+        margin: 0 30px 0 0;
+    }
+    .pie-pagina .grupo-1 .box1 h2 {
+        color: #fff;
+        font-size: 18px;
+        margin: 25px 0 10px 0;
+    }
+    .lista-ayuda li a {
+        font-size: 18px;
+        margin: 0 25px 0 0;
+        
+    }
+    .pie-pagina .grupo-1 .box .figure iframe {
+        width: 40%;
+        height: 50%;
+    }
+    .pie-pagina .grupo-2 {
+        text-align: center;
+    }
+    .grupo-2 p {
+        font-size: 17px;
+    }
+
+    /*pàgina inicio*/
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(1, 6fr);
+    }
+    .productos-inicio {
+        display: block;
+        margin: 0 auto;
+    }
+    .producto {
+        height: 120%;
+        width: 80%;
+    }
+    .producto h3 {
+        font-size: 25px;
+        margin: 0 auto;
+        padding: 0 0 30px 0;
+    }
+    .producto img {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+    .productos-inicio a:link,
+    .productos-inicio a:visited {
+        color: #ececec;
+        text-decoration: none;
+        background-color: #2c3e50;
+        padding: 1.2rem 3rem;
+        border-radius: 1rem;
+        transition: all 0.2s;
+    }
+
+    /*pàgina productos*/
+    .subtit-producto {
+        font-size: 25px;
+    }
+    .descrip-prod {
+        width: 150px;
+        height: 150px;
+    }
+    .descrip-prod img {
+        width: 140px;
+        height: 140px;
+        transition: all 0.3s;
+    }
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(2, 4fr);
+        justify-content: center;
+    }
+
+    /*pàgina mètodos*/
+    .title h4 {
+        font-size: 30px;
+    }
+    .container2 {
+        width: 375px;
+    }
+
+    /*pàgina nosotros*/
+    .cajas {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        margin-bottom: 30px;
+    }
+    .caja-nosotros1 {
+        width: 350px;
+        height: 350px;
+    }
+    .caja-nosotros2 img {
+        width: 80%;
+        height: 80%;
+        margin: 20px 0 0 40px;
+    }
+
+    /*página contacto*/
+    .container-form h2 {
+        font-size: 35px;
+        margin: 0 0 0 25px;
+    }
+    .container-form {
+        width: 100%;
+        margin: 30px 0 30px 0;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 25px;
+    }
+    .info-form {
+        margin: 0 0 20px 50px;
+    }
+    .container-form a {
+        font-size: 23px;
+        margin: 30px 0 0 0;
+        font-weight: 400;
+    }
+    .container-form a i {
+        font-size: 25px;
+    }
+    .container-form form .campo, textarea {
+        font-size: 20px;
+        width: 300px;
+        margin: 0 0 15px 55px;
+    }
+    .container-form form textarea {
+        font-size: 20px;
+        margin: 0 0 0 55px;
+    }
+    .form-txt a {
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+        margin: 10px 10px 20px 0;
+    }
+    .container-form .btn-enviar {
+        margin: 0 0 0 40px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .titulo h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    header .fa-bars {
+        display: block;
+    }
+    header .fa-bars a:hover {
+        color: #eeff00;
+    }
+    .logo {
+        display: none;
+    }
+    header .navbar {
+        position: absolute;
+        background: #333;
+        border: solid #333;
+        height: 340px;
+        z-index: 1000;
+    }
+    header .navbar a:hover {
+        color: #eeff00;
+    }
+    header .navbar a {
+        font-size: 18px;
+        background: #000;
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    header .icons a:hover {
+        color: #eeff00;
+    }
+
+    /*footer pàginas*/
+    .pie-pagina {
+        width: 100%;
+        display: block;
+    }
+    .caja-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+    }
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        display: block;
+    }
+    .pie-pagina .grupo-1 .box1 {
+        display: block;
+        margin: 0 30px 0 0;
+    }
+    .pie-pagina .grupo-1 .box1 h2 {
+        color: #fff;
+        font-size: 18px;
+        margin: 25px 0 10px 0;
+    }
+    .lista-ayuda li a {
+        font-size: 18px;
+        margin: 0 25px 0 0;
+        
+    }
+    .pie-pagina .grupo-1 .box .figure iframe {
+        width: 40%;
+        height: 50%;
+    }
+    .pie-pagina .grupo-2 {
+        text-align: center;
+    }
+    .grupo-2 p {
+        font-size: 17px;
+    }
+
+    /*pàgina inicio*/
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(1, 6fr);
+    }
+    .productos-inicio {
+        display: block;
+        margin: 0 auto;
+    }
+    .producto {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .producto h3 {
+        font-size: 25px;
+        margin: 0 auto;
+        padding: 0 0 30px 0;
+    }
+    .producto img {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+    .productos-inicio a:link,
+    .productos-inicio a:visited {
+        color: #ececec;
+        text-decoration: none;
+        background-color: #2c3e50;
+        padding: 1.2rem 3rem;
+        border-radius: 1rem;
+        transition: all 0.2s;
+    }
+
+    /*pàgina productos*/
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(2, 4fr);
+        justify-content: center;
+    }
+    .descrip-prod {
+        width: 160px;
+        height: 160px;
+        margin: 0 0 20px 0;
+    }
+    .subtit-producto {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .descrip-prod img {
+        width: 145px;
+        height: 145px;
+        transition: all 0.3s;
+    }
+
+    /*pàgina mètodos*/
+    .title h4 {
+        font-size: 25px;
+    }
+    .container2 {
+        width: 375px;
+        padding: 40px;
+    }
+
+    /*pàgina nosotros*/
+    .titulo-nosotros h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .cajas {
+        display: block;
+    }
+    .caja-nosotros1 {
+        width: 340px;
+        margin-bottom: 30px;
+    }
+    .caja-nosotros2 img {
+        width: 340px;
+        margin: 0 0 30px 17px;
+    }
+
+    /*página contacto*/
+    .container-form h2 {
+        font-size: 35px;
+        margin: 0 0 0 10px;
+    }
+        .container-form {
+        width: 100%;
+        margin: 30px 0 30px 0;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+    .info-form {
+        margin: 0 0 20px 50px;
+    }
+    .container-form a i {
+        font-size: 20px;
+    }
+    .container-form form .campo, textarea {
+        font-size: 20px;
+        width: 300px;
+        margin: 0 0 20px 35px;
+    }
+    .container-form form textarea {
+        margin: 0 0 20px 35px;
+    }
+    .form-txt a {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        margin: 0 10px 20px 0;
+    }
+    .container-form .btn-enviar {
+        margin: 0 0 0 40px;
+        font-size: 17px;
+    }
+}
